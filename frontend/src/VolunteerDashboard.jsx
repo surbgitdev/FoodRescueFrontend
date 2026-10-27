@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import './VolunteerDashboard.css'
 
-const API_URL = 'http://localhost:8080/api/donations'
+const API_URL = 'https://foodrescue-backend-8o0j.onrender.com/api/donations'
 
 function VolunteerDashboard({ user, onLogout }) {
   const [tasks, setTasks] = useState([])

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import './NGODashboard.css'
 
-const API_URL = 'http://localhost:8080/api/donations/available'
+const API_URL = 'https://foodrescue-backend-8o0j.onrender.com/api/donations/available'
 
 function NGODashboard({ user, onLogout }) {
   const [donations, setDonations] = useState([])
@@ -44,9 +44,9 @@ async function loadClaimedDonations() {
   if (!user?.id) return
 
   try {
-    const response = await fetch(
-      `http://localhost:8080/api/donations/ngo/${user.id}`
-    )
+  const response = await fetch(
+    `https://foodrescue-backend-8o0j.onrender.com/api/donations/ngo/${user.id}`
+  );
 
     if (!response.ok) {
       throw new Error('Could not load claimed donations.')
@@ -70,11 +70,10 @@ async function loadClaimedDonations() {
     setMessage('')
 
     try {
-      const response = await fetch(
-        `http://localhost:8080/api/donations/${donationId}/claim?ngoId=${user.id}`,
-        { method: 'POST' }
-      )
-
+  const response = await fetch(
+    `https://foodrescue-backend-8o0j.onrender.com/api/donations/${donationId}/claim?ngoId=${user.id}`,
+    { method: 'POST' }
+  );
       const data = await response.json()
 
       if (!response.ok) {

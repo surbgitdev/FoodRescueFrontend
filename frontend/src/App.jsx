@@ -33,9 +33,8 @@ function App() {
 
     const endpoint =
       mode === 'register'
-        ? 'http://localhost:8080/api/auth/register'
-        : 'http://localhost:8080/api/auth/login'
-
+       ? 'https://foodrescue-backend-8o0j.onrender.com/api/auth/register'
+: 'https://foodrescue-backend-8o0j.onrender.com/api/auth/login'
     const body =
       mode === 'register'
         ? { ...form, role }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './DonorDashboard.css'
 
-const API_URL = 'http://localhost:8080/api/donations'
+const API_URL = 'https://foodrescue-backend-8o0j.onrender.com/api/donations'
 
 const emptyForm = {
   foodName: '',
