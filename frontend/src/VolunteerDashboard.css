@@ -1,0 +1,366 @@
+
+.volunteer-page {
+  min-height: 100vh;
+  background: #071b14;
+  color: #f2f7f1;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.volunteer-header {
+  min-height: 76px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #0b261b;
+  border-bottom: 1px solid #244332;
+  color: #ffffff;
+}
+
+.volunteer-brand {
+  color: #b8f36b;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.volunteer-brand span {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.volunteer-account {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 14px;
+}
+
+.volunteer-account button {
+  padding: 10px 17px;
+  border: 1px solid #496b54;
+  border-radius: 9px;
+  background: #173727;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.volunteer-account button:hover {
+  background: #244a35;
+}
+
+.volunteer-main {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+  padding: 52px 0 70px;
+}
+
+.volunteer-eyebrow {
+  margin: 0 0 12px;
+  color: #b8f36b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.volunteer-main h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -1.8px;
+  color: #f5f8f3;
+}
+
+.volunteer-main h1 span {
+  color: #b8f36b;
+}
+
+.volunteer-subtitle {
+  max-width: 650px;
+  margin: 16px 0 30px;
+  color: #a5b8a9;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.volunteer-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 38px;
+}
+
+.volunteer-summary > div {
+  padding: 23px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #102c20;
+  border: 1px solid #294b36;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.volunteer-summary span {
+  color: #a5b8a9;
+  font-size: 14px;
+}
+
+.volunteer-summary strong {
+  color: #b8f36b;
+  font-size: 32px;
+}
+
+.volunteer-list-section {
+  padding: 28px;
+  background: #0d261b;
+  border: 1px solid #294b36;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.volunteer-tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #294333;
+  margin-bottom: 26px;
+}
+
+.volunteer-tabs button {
+  padding: 0 0 14px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: #a5b8a9;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.volunteer-tabs button.active {
+  color: #b8f36b;
+  border-bottom-color: #b8f36b;
+}
+
+.volunteer-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.volunteer-section-heading h2 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  color: #f5f8f3;
+}
+
+.volunteer-refresh {
+  padding: 9px 14px;
+  border: 1px solid #426149;
+  border-radius: 8px;
+  background: #173727;
+  color: #d8efc9;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.volunteer-refresh:hover {
+  background: #244a35;
+}
+
+.volunteer-message {
+  padding: 13px 15px;
+  margin: 0 0 20px;
+  border-radius: 9px;
+  background: #203d27;
+  border: 1px solid #426a38;
+  color: #d7f5bd;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.volunteer-info {
+  color: #a5b8a9;
+}
+
+.volunteer-empty {
+  padding: 38px 20px;
+  text-align: center;
+  border: 1px dashed #426149;
+  border-radius: 13px;
+  background: #102a1e;
+}
+
+.volunteer-empty h3 {
+  margin: 0 0 10px;
+  color: #f2f7f1;
+  font-size: 18px;
+}
+
+.volunteer-empty p {
+  margin: 0;
+  color: #a5b8a9;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.volunteer-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.volunteer-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #2b4a36;
+  border-radius: 14px;
+  background: #112e21;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-2px);
+  border-color: #547c43;
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.2);
+}
+
+.volunteer-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+
+.volunteer-status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #29472a;
+  color: #c9f6a4;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.volunteer-id {
+  color: #9bb09f;
+  font-size: 12px;
+}
+
+.volunteer-card h3 {
+  margin: 0 0 7px;
+  color: #f2f7f1;
+  font-size: 21px;
+  overflow-wrap: anywhere;
+}
+
+.volunteer-food-details {
+  margin: 0 0 20px;
+  color: #a5b8a9;
+  font-size: 14px;
+}
+
+.volunteer-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 0;
+  border-top: 1px solid #294333;
+}
+
+.volunteer-detail span {
+  color: #9bb09f;
+  font-size: 12px;
+}
+
+.volunteer-detail strong {
+  color: #e1ece1;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.volunteer-description {
+  color: #a5b8a9;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.volunteer-accept {
+  width: 100%;
+  margin-top: 15px;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #b8f36b;
+  color: #17351f;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  transition: background 0.2s ease;
+}
+
+.volunteer-accept:hover:not(:disabled) {
+  background: #a5e653;
+}
+
+.volunteer-accept:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .volunteer-header {
+    padding: 17px 5%;
+  }
+
+  .volunteer-brand {
+    font-size: 21px;
+  }
+
+  .volunteer-brand span {
+    font-size: 15px;
+  }
+
+  .volunteer-account {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .volunteer-account button {
+    padding: 9px 10px;
+  }
+
+  .volunteer-main {
+    width: 90%;
+    padding-top: 36px;
+  }
+
+  .volunteer-summary,
+  .volunteer-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-list-section {
+    padding: 19px;
+  }
+
+  .volunteer-tabs {
+    gap: 18px;
+  }
+
+  .volunteer-tabs button {
+    font-size: 12px;
+  }
+
+  .volunteer-section-heading h2 {
+    font-size: 18px;
+  }
+}
